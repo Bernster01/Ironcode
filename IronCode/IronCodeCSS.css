@@ -1,0 +1,813 @@
+html{
+
+font-family: 'Permanent Marker', cursive;
+
+background: grey;
+
+
+}
+
+
+
+body{
+overflow: hidden;
+-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+background-color: darkgreygrey;
+}
+video{
+position = absolute;
+margin-top:-38.1%;
+margin-left:-0.4%;
+display:block;
+}
+#cheatconsole{
+display:none;
+
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes EpicWin {
+0% { transform: scale(1,1) rotate(0deg); background-color:darkred;}
+12.5% { transform: scale(2,2) rotate(45deg); background-color:darkgreen;}
+
+25% { transform: scale(1,1) rotate(90deg); background-color:darkblue;}
+37.5% { transform: scale(2,2) rotate(135deg); background-color:darkyellow;}
+
+50% { transform: scale(1,1) rotate(180deg); background-color:red;}
+62.5% { transform: scale(2,2) rotate(225deg); background-color:darkgreen;}
+
+75% { transform: scale(1,1) rotate(270deg); background-color:darkblue;}
+87.5% { transform: scale(2,2) rotate(315deg); background-color:darkyellow;}
+
+
+100% { transform: scale(1,1) rotate(360deg); background-color:darkred;}
+
+}
+@keyframes EpicWin2 {
+0% { transform: scale(1,1) rotate(0deg); background-color:darkred;}
+12.5% { transform: scale(4,4) rotate(90deg); background-color:darkgreen;}
+
+25% { transform: scale(1,1) rotate(180deg); background-color:darkblue;}
+37.5% { transform: scale(4,4) rotate(270deg); background-color:darkyellow;}
+
+50% { transform: scale(1,1) rotate(360deg); background-color:red;}
+
+62.5% { transform: scale(4,4) rotate(270deg); background-color:darkgreen;}
+
+75% { transform: scale(1,1) rotate(180deg); background-color:darkblue;}
+87.5% { transform: scale(4,4) rotate(90deg); background-color:darkyellow;}
+
+
+100% { transform: scale(1,1) rotate(0deg); background-color:darkred;}
+
+}
+@keyframes EpicWin3 {
+0% { transform: translate(0px,0px);}
+25% { transform: translate(100px,0px);}
+50% { transform: translate(0px,0px);}
+75% { transform: translate(-100px,0px);}
+100% { transform: translate(0px,0px);}
+
+}
+
+canvas{
+
+border:6px solid gray;
+background-color:rgb(185,185,185);
+border-radius:15px;
+
+background:url('image/gamebackground.png') no-repeat;
+background-size:cover;
+}
+html{
+transition: background 1s;
+background: white;
+}
+#Energycontainer{
+height:20px;
+width:600px;
+background:rgb(170,170,170);
+
+display:none;
+border: solid 3px gray;
+border-radius:15px;
+color: black;
+}
+#Energybox{
+height:20px;
+width:600px;
+background:yellow;
+margin-top:-3.8%;
+border-radius:15px;
+
+}
+#energytext{
+text-align:center;
+
+
+}
+#Shieldcontainer{
+height:20px;
+width:600px;
+background:rgb(170,170,170);
+display:none;
+
+color: black;
+border: solid 3px gray;
+border-radius:15px;
+
+}
+#Shieldbox{
+height:20px;
+width:600px;
+background:rgb(77, 0, 77);
+margin-top:-3.8%;
+transition: width 0.2s;
+border-radius:15px;
+
+}
+#shieldtext{
+text-align:center;
+
+
+}#Livescontainer{
+height:20px;
+width:600px;
+background:rgb(170,170,170);
+display:none;
+color: black;
+
+
+border: solid 3px gray;
+border-radius:15px;
+}
+#Livesbox{
+height:20px;
+width:600px;
+background:red;
+margin-top:-3.8%;
+transition: width 1s;
+border-radius:15px;
+
+}
+#BossHealthText{
+text-align:center;
+
+
+}
+#BossHealthContainer{
+height:20px;
+width:1200px;
+background:rgb(170,170,170);
+display:block;
+color: black;
+
+
+border: solid 3px gray;
+border-radius:15px;
+}
+#BossHealthBox{
+height:20px;
+width:1200px;
+background:purple;
+margin-top:-1.9%;
+transition: width 1s;
+border-radius:15px;
+
+}
+
+#livestext{
+text-align:center;
+
+
+}
+#abilityContainer{
+margin-top: -30%;
+background:rgb(155,155,155);
+color: black;
+float:right;
+z-index:2;
+width:200px;
+border: solid gray 5px;
+border-radius: 15px;
+display:none;
+}
+#Energy_Regen_button{
+
+border-radius:15px;
+border: 2px solid gray;
+
+position:relative;
+padding:5px;
+
+}
+#soundsettingContainer{
+
+float:right;
+margin-top:-40%;
+
+
+}
+#Autokillbarcontainer{
+height:20px;
+width:97px;
+background:rgb(170,170,170);
+
+display:none;
+border: solid 3px gray;
+border-radius:15px;
+}
+
+#Autokillbar{
+height:20px;
+width:0px;
+background:darkred;
+display:none;
+transition: color 0.2s;
+border-radius:15px;
+
+}
+#inventorycontainer{
+width:600px;
+height:100px;
+background:rgb(190,190,190);
+margin-top:-75px;
+margin-left:610px;
+border:solid 5px rgb(120,120,120);
+border-radius:15px;
+transition:background 1s;
+display:none;
+}
+#InventorySlot1{
+width:32px;
+height:32px;
+margin-left:5px;
+margin-top:5px;
+background:gray;
+display:inline-block;
+transition:background 0.5s;
+}
+#InventorySlot2{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s;
+}
+#InventorySlot3{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s;
+}
+#InventorySlot4{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s;
+}
+#InventorySlot5{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s;
+}
+#InventorySlot6{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s;
+}
+
+#Gold{
+width:32px;
+height:32px;
+margin-top:-8px;
+background:url(Inventory/Gold.png);
+}
+#Golds{
+margin-top:-25px;
+margin-left:32px;
+color:black;
+}
+#Cost{
+transition:opacity 0.5s;
+
+}
+#InventorySlot7{
+margin-left:50px;
+
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot8{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot9{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot10{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot11{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot12{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot13{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot14{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot15{
+margin-left:283px;
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot16{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot17{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot18{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot19{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot20{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot21{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot22{
+width:32px;
+height:32px;
+background:gray;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot23{
+width:32px;
+height:32px;
+background:gray;
+position:absolute;
+margin-left:-576px;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot24{
+width:32px;
+height:32px;
+background:gray;
+position:absolute;
+margin-left:-538px;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#InventorySlot25{
+width:32px;
+height:32px;
+background:gray;
+position:absolute;
+margin-left:-500px;
+display:inline-block;
+transition:background 0.5s, box-shadow 0.15s;
+}
+#Questcontainer{
+width:500px;
+height:500px;
+background:url('Image/Questcontain.jpg');
+background-size:500px 500px;
+border-radius:5px;
+display:none;
+transition: box-shadow 1s;
+margin-left:65%;
+margin-top:-40%;
+z-index:99;
+box-shadow:1px 2px 6px 1px;
+position:absolute;
+
+}
+#Questcontainer:hover{
+
+box-shadow:3px 6px 64px 3px;
+
+}
+#shopcontainer{
+width:500px;
+height:500px;
+background:url('Image/Questcontain.jpg');
+background-size:500px 500px;
+border-radius:5px;
+display:none;
+transition: box-shadow 1s;
+margin-left:65%;
+margin-top:-40%;
+z-index:99;
+box-shadow:1px 2px 6px 1px;
+position:absolute;
+
+}
+#shopcontainer:hover{
+
+box-shadow:3px 6px 64px 3px;
+
+}
+#Quest1{
+width:100px;
+height: 200px;
+background:url('Image/Questpapper.png');
+background-size: 110px 210px;
+display:inline-block;
+padding: 5px;
+postion:absolute;
+float:top;
+text-align:center;
+margin-left: 15px;
+transition:width 1s, height 1s,background-size 1s;
+color:black;
+}
+#Quest2{
+width:100px;
+height: 200px;
+background:url('Image/Questpapper.png');
+background-size: 110px 210px;
+display:inline-block;
+padding: 5px;
+float:top;
+text-align:center;
+postion:absolute;
+transition:width 1s, height 1s,background-size 1s;
+color:black;
+}
+#Quest3{
+width:100px;
+height: 200px;
+background:url('Image/Questpapper.png');
+background-size: 110px 210px;
+display:inline-block;
+padding: 5px;
+float:top;
+text-align:center;
+postion:absolute;
+transition:width 1s, height 1s,background-size 1s;
+color:black;
+}
+#Questspecial{
+width:100px;
+height: 200px;
+background:url('Image/Questpapper.png');
+background-size: 110px 210px;
+display:inline-block;
+padding: 5px;
+float:top;
+text-align:center;
+postion:absolute;
+transition:width 1s, height 1s,background-size 1s;
+color:black;
+}
+#Togglequests{
+margin-left:65%;
+margin-top:-42%;
+
+position:absolute;
+border:none;
+width:32px;
+height:32px;
+background:url('inventory/47.jpg');
+}
+#Toggleshop{
+margin-left:65%;
+margin-top:-40.2%;
+
+position:absolute;
+border:none;
+width:32px;
+height:32px;
+background:url('inventory/48.jpg');
+}
+#Quest1button{
+margin-left:4%;
+
+}
+#Quest2button{
+margin-left:1.8%;
+
+}
+#Quest3button{
+margin-left:1.8%;
+
+}
+#Quest4button{
+margin-left:1.8%;
+
+}
+#Stat{
+width:600px;
+height:50px;
+background:rgb(190,190,190);
+margin-top:-3.2%;
+margin-left:30%px;
+border:solid 5px rgb(120,120,120);
+border-radius:15px;
+transition:background 1s;
+font-size:9pt;
+color: black;
+display:none;
+}
+#itemContainer{
+margin-top:5%;
+color:black;
+}
+#item1{
+border: none;
+margin-left:2%;
+width:32px;
+height:32px;
+background:url('inventory/28.jpg');
+color:black;
+}
+#item2{
+margin-left:2%;
+width:32px;
+height:32px;
+background:url('inventory/27.jpg');
+border: none;
+color:black;
+}
+#item3{
+margin-left:2%;
+width:32px;
+height:32px;
+background:url('inventory/26.jpg');
+border: none;
+color:black;
+}
+
+#item4{
+margin-left:2%;
+width:32px;
+height:32px;
+background:url('inventory/33.jpg');
+border: none;
+color:black;
+}
+
+#item5{
+margin-left:2%;
+width:32px;
+height:32px;
+background:url('inventory/34.jpg');
+border: none;
+color:black;
+}
+#item6{
+margin-left:2%;
+width:32px;
+height:32px;
+background:url('inventory/49.jpg');
+border: none;
+color:black;
+}
+
+
+
+#texthere{
+color:black;
+margin-left:65%;
+margin-top:-45%;
+
+}
+
+#shop{
+color:black;
+margin-left: 15%;
+font-size:20pt;
+}
+#Summon{
+color:black;
+margin-left: 10%;
+font-size:20pt;
+}
+#Potion1{
+
+color:black;
+margin-left:2.5%;
+width:32px;
+height:32px;
+background:url('inventory/1.jpg');
+display:inline-block;
+}
+#Potion2{
+margin-left:2.5%;
+width:32px;
+height:32px;
+color:black;
+background:url('inventory/28.jpg');
+display:inline-block;
+}
+#Potion3{
+color:black;
+width:32px;
+height:32px;
+background:url('inventory/27.jpg');
+display:inline-block;
+}
+#Potion4{
+color:black;
+width:32px;
+height:32px;
+background:url('inventory/26.jpg');
+display:inline-block;
+}
+#Potion5{
+color:black;
+width:32px;
+height:32px;
+background:url('inventory/1.jpg');
+display:inline-block;
+}
+#Potioncontainer{
+margin-top:-7%;
+margin-left:15%;
+color:black;
+}
+#amountText{
+margin-left:45%;
+color:black;
+}
+#auctionSlot1{
+color:black;
+width:32px;
+height:32px;
+background:url('inventory/1.jpg');
+display:inline-block;
+}
+#auctionSlot2{
+color:black;
+margin-top:12%;
+width:32px;
+height:32px;
+background:url('inventory/1.jpg');
+display:inline-block;
+}
+#auctionSlot3{
+margin-top:12%;
+width:32px;
+height:32px;
+background:url('inventory/1.jpg');
+display:inline-block;
+}
+#auction{
+color:black;
+margin-left: 40%;
+font-size:20pt;
+}
+#auctionContainer{
+margin-left:52%;
+margin-top:-22%;
+color:black;
+}
+#darknesscontainer{
+
+height:20px;
+width:600px;
+background:rgb(170,170,170);
+display:none;
+
+margin-top:43.8%;
+margin-left:32.25%;
+border: solid 3px gray;
+border-radius:15px;
+
+}
+#darknessbox{
+height:20px;
+width:600px;
+background:rgb(80,40,120);
+margin-top:-3.85%;
+
+border-radius:15px;
+
+}
+#darkness{
+
+
+}
+#darknesstext{
+text-align:center;
+margin-top:-0.1%;
+color:rgb(160,160,160);
+}
+#BossReturn{
+font-size: 20pt;
+display:none;
+position:absolute;
+
+margin-top:-40%;
+margin-left:65%;;
+}
+#BossReturnTimer{
+font-size: 24pt;
+
+}
+#GameStart{
+position:fixed;
+height:33%;
+width:33%;
+border-radius:50%;
+box-shadow:1px 1px 8px 2px;
+left: 33%;
+top: 33%;
+text-decoration:none;
+background:darkgrey;
+border: solid 10px rgb(50,50,50);
+transition: box-shadow 1s;
+}
+#GameStart:hover{
+box-shadow:1px 1px 64px 32px;
+
+}

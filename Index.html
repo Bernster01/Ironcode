@@ -1,0 +1,557 @@
+<DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@0;1&display=swap" rel="stylesheet">
+<style>
+html{
+
+font-family: 'DM Mono', monospace;
+background:rgb(20,20,20);
+}
+#Container{
+width:95%;
+height:auto;
+background:rgb(180,180,180);
+margin-left:2.5%;
+border-radius:15px;
+}
+#ControlsContainer{
+
+width:96%;
+height:auto;
+
+margin-left:2%;
+border-radius:15px;
+
+}
+#BossMusicContiner{
+Width:95%;
+background:rgb(210,210,210);
+margin-left:2.5%;
+height:50%;
+border-radius:15px;
+box-shadow:0px 4px 128px 16px;
+}
+#Regular{
+Width:95%;
+background:rgb(190,190,190);
+margin-left:2.5%;
+height:47%;
+border-radius:15px;
+box-shadow:0px 10px 32px 4px;
+}
+#MusicContainer{
+Width:95%;
+background:rgb(180,180,180);
+margin-left:2.5%;
+height:300%;
+border-radius:15px;
+}
+a{
+margin-left:5%;
+}
+span{
+margin-left:5%;
+}
+audio{
+margin-left:50%;
+margin-top:-6%;
+}
+#song1{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song2{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song3{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song4{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song5{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song6{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song7{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song8{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song9{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song10{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song11{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song12{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song13{
+width:60%;
+border-radius: 15px;
+border: solid grey 5px;
+background: rgb(150,150,150);
+margin-left:18%;
+margin-top:1%;
+padding:5px;
+transition:background-color 2s,box-shadow 1s;
+}
+#song1:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song2:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song3:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song4:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song5:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song6:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song7:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song8:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song9:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song10:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song11:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song12:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+#song13:hover{
+background:rgb(200,200,200);
+box-shadow: 2px 4px 32px 2px;
+}
+
+
+#ChaosGolemTheme{
+
+margin-top:1%;
+}
+#FirstDay{
+
+margin-top:1%;
+}
+#Death{
+
+margin-top:1%;
+}
+h1{
+text-align: center;
+
+}
+#titles{
+text-align:center;
+font-weight:bold;
+}
+header{
+width:10%;
+height:5%;
+background:rgb(200,200,200);
+border-radius:15px;
+border:solid 5px rgb(160,160,160);
+position:fixed;
+z-index:90;
+box-shadow:0px 10px 128px 32px ;
+}
+#IronCode{
+margin-top:0.2%;
+margin-left:0.2%;
+
+}
+.Game{
+
+height:65%;
+border-radius: 5px;
+margin-left:30%;
+transition:box-shadow 1s;
+display:block;
+margin-top:-16%;
+
+}
+
+.Game:hover{
+
+box-shadow: 2px 2px 16px 2px;
+
+}
+#ImgGeneralContainer{
+width:95%;
+height:auto;
+background:rgb(210,210,210);
+margin-left:2.5%;
+border-radius:15px;
+box-shadow:0px 4px 128px 16px;
+}
+#ImgGeneral{
+margin-left:12.5%;
+
+}
+h2{
+text-align:center;
+}
+#controls{
+text-align:center;
+margin-left:30%;
+margin-right:30%;
+}
+#bottomButton{
+
+width:40%;
+height:20%;
+border-radius:15px;
+border:solid 5px rgb(100,100,100);
+font-size:48pt;
+font-weight:bold;
+margin-left:28%;
+transition:box-shadow 1s;
+}
+#bottomButton:hover{
+box-shadow: 0px 0px 64px 8px;
+}
+</style>
+<head>
+
+</head>
+
+<body>
+<header>
+<img id="IronCode" height="40px" width="auto" src="IronCode/Inventory/IronCode.jpg"></img>
+
+<button class="Game" onclick="window.location.href = 'IronCode/Ironcode.html';">Play IronCode</button>
+
+</header>
+<div id="Container"><br />
+<div id="ControlsContainer"><br />
+<div id="ImgGeneralContainer"><br /><br />
+<img id="ImgGeneral" src="Images/General.png" width="75%" height="auto"></img>
+<br /><br />
+<h1>Controls</h1>
+
+<h2>Movement</h2>
+<div id="Controls">
+Move up - W <br />
+Move down - S <br />
+Move left - A <br />
+Move right - D <br />
+</div>
+<h2>Action</h2>
+<div id="Controls">
+Attack - J <br />
+Launch spell - K <br />
+Cycle potions - L <br />
+Use potions - I <br />
+Open questbook - Q <br />
+Open Shop - F <br />
+Pause - P <br />
+Inventory mode - E <br />
+<br />
+</div>
+<h1>Shop & Auction</h1>
+<div id="Controls">
+The shop is were you buy potions, quests (Note that quests can be earned from killing monsters), and the summon 
+for Nadir dach, the supreme sorcerer (Beware that only well equiped knights should face off against Nadir). The Auction is were you can sell items, not <br /> 
+<img src="IronCode/inventory/29.jpg"></img> <img src="IronCode/inventory/30.jpg"></img> <img src="IronCode/inventory/31.jpg"></img> <img src="IronCode/inventory/32.jpg"></img><br />
+<img src="Images/Shop.png"></img>
+<br />
+<h2>Inventory</h2>
+There is two modes for the inventory, sellmode and switchmode indicted by the background color. Press E to switch between the two modes. 
+Sellmode is where you can sell the items<br />
+<img src="IronCode/inventory/29.jpg"></img> <img src="IronCode/inventory/30.jpg"></img> <img src="IronCode/inventory/31.jpg"></img> <img src="IronCode/inventory/32.jpg"></img><br />
+Switchmode is were you can move items around the inventory or equip items to the accesories slots<br />
+<img src="IronCode/inventory/35.jpg"></img> <img src="IronCode/inventory/35.jpg"></img> <img src="IronCode/inventory/35.jpg"></img>
+<h3>Sellmode</h3>
+<img src ="Images/InventoryMode1.png"></img>
+<h3>Switchmode</h3>
+<img src="Images/InventoryMode2.png"></img>
+<h1>Selling</h1>
+<h2>Selling items</h2>
+<img src="IronCode/inventory/29.jpg"></img> <img src="IronCode/inventory/30.jpg"></img> <img src="IronCode/inventory/31.jpg"></img> <img src="IronCode/inventory/32.jpg"></img><br />
+
+<h3>Step 1</h3>
+Click on the item you wish to sell.<br /><br />
+<img src="Images/Sellitem1.png"></img>
+
+<h3>Step 2</h3>
+Item sold and gold added to your character.<br /><br />
+<img src="Images/Sellitem2.png"></img>
+<h2> Selling special items</h2>
+<img src="IronCode/inventory/36.jpg"></img>
+<img src="IronCode/inventory/38.jpg"></img>
+<img src="IronCode/inventory/40.jpg"></img><br />
+Note! Not all items shown.
+<h3>Step 1</h3>
+Click on the item you wish to sell.<br /><br />
+<img src="Images/Sellitem3.png"></img>
+<h3>Step 2</h3>
+Wait. The item will be put up for auction and after some time the item will be sold, then gold will be added to the character.<br /><br />
+<img src="Images/Sellitem4.png"></img><br /><br />
+</div>
+</div>
+</div><br />
+</div><br />
+<div id="MusicContainer"><br />
+
+<br />
+<div id="Regular">
+
+<br />
+<h1>Music</h1>
+<br />
+<div id="Song1">
+<div id ="titles">Title: First day</div>
+<span>Music provided by Casper Berneklint, All rights reserved<br>
+
+</span>
+<audio id="FirstDay" src="IronCode/Audio/Song1.mp3" controls></audio>
+</div>
+<div id="Song2">
+<div id ="titles">Title: Death</div>
+<span>Music provided by Casper Berneklint, All rights reserved<br>
+
+</span>
+<audio id="Death" src="IronCode/Audio/Death.mp3" controls></audio>
+</div>
+<div id="Song3">
+<div id ="titles">Title: Life</div>
+<span>Music provided by No Copyright Music:</span><br>
+<a href="https://www.youtube.com/c/royaltyfreezone" target="_blank">https://www.youtube.com/c/royaltyfree...</a><br>
+<span>Music used: Life by Ender Güney</span><br>
+<a href="https://www.youtube.com/channel/UCHEioEoqyFPsOiW8CepDaYg" target="_blank">https://www.youtube.com/c/NC...</a><br>
+<span>Licensed under Creative Commons Attribution 3.0</span><br>
+<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="Life" src="IronCode/Audio/Life.mp3" controls></audio>
+</div>
+<div id="Song4">
+<div id ="titles">Title: Dragon War</div>
+<span>Music provided by No Copyright Music:</span><br>
+<a href="https://www.youtube.com/c/royaltyfreezone" target="_blank">https://www.youtube.com/c/royaltyfree...</a><br>
+<span>Music used: Dragon War by Makai Symphony</span><br>
+<a href="https://soundcloud.com/makai-symphony/dragon-warorchestral-battle-music" target="_blank">https://soundcloud.com/makai-symphony...</a><br>
+<span>Licensed under Creative Commons Attribution 3.0</span><br>
+<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="DragonWar" src="IronCode/Audio/Dragon War.mp3" controls></audio>
+</div>
+<div id="Song5">
+<div id ="titles">Title: Dreams And Fantasies</div>
+<span>Music provided by No Copyright Music:</span><br>
+<a href="https://www.youtube.com/c/royaltyfreezone" target="_blank">https://www.youtube.com/c/royaltyfree...</a><br>
+<span>Music used: Dreams And Fantasies by Jay Man - OurMusicBox</span><br>
+<a href="https://www.youtube.com/watch?v=aCFLw-rtzVU" target="_blank">https://www.youtube.com/watch?v=...</a><br>
+<span>Licensed under Creative Commons Attribution 4.0</span><br>
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="DreamsAndFantasies" src="IronCode/Audio/Dreams And Fantasies.mp3" controls></audio>
+</div>
+<div id="Song6">
+<div id ="titles">Title: The War</div>
+<span>Music provided by No Copyright Music:</span><br>
+<a href="https://www.youtube.com/c/royaltyfreezone" target="_blank">https://www.youtube.com/c/royaltyfree...</a><br>
+<span>Music used: The War by Ender Güney</span><br>
+<a href="https://www.youtube.com/channel/UCHEioEoqyFPsOiW8CepDaYg" target="_blank">https://www.youtube.com/c/NC...</a><br>
+<span>Licensed under Creative Commons Attribution 3.0</span><br>
+<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="EndlessStorm" src="IronCode/Audio/Endless Storm.mp3" controls></audio>
+</div>
+<div id="Song7">
+<div id ="titles">Title: Behind the Memories</div>
+<span>Music provided by No Copyright Music:</span><br>
+<a href="https://www.youtube.com/c/royaltyfreezone" target="_blank">https://www.youtube.com/c/royaltyfree...</a><br>
+<span>Licensed under Creative Commons Attribution 3.0</span><br>
+<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="BehindTheMemories" src="IronCode/Audio/Behind the Memories.mp3" controls></audio>
+</div>
+</div>
+<br /> 
+<div id="BossMusicContiner"><br />
+
+<h1>Boss music</h1>
+<br />
+<div id="Song8">
+<div id ="titles">Title: ChaosGolemTheme</div>
+<span>Music provided by Casper Berneklint, All rights reserved</span><br>
+
+
+<audio id="ChaosGolemTheme" src="IronCode/Audio/ChaosGolemTheme.mp3" controls></audio>
+</div>
+<div id="Song9">
+<div id="titles">Title: Endless Storm</div>
+<span>Music provided by No Copyright Music:</span><br>
+<a href="https://www.youtube.com/c/royaltyfreezone" target="_blank">https://www.youtube.com/c/royaltyfree...</a><br>
+<span>Music used: Endless Storm by Makai Symphony</span><br>
+<a href="https://soundcloud.com/omsktransmash/fantasy-title-06-minor-tense" target="_blank">https://soundcloud.com/makai-symphony...</a><br>
+<span>Licensed under Creative Commons Attribution 3.0</span><br>
+<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+<audio id="EndlessStorm" src="IronCode/Audio/Endless Storm.mp3" controls></audio>
+</div>
+<div id="Song10">
+<div id ="titles">Title: Fantasy Title 06 Minor Tense Big Alt 01</div>
+<span>Music used: Fantasy Title 06 Minor Tense Big Alt 01 by OmskTransmash</span><br>
+<a href="https://soundcloud.com/omsktransmash/fantasy-title-06-minor-tense" target="_blank">https://soundcloud.com/omsktransmash... </a><br>
+<span>Licensed under Creative Commons Attribution 3.0</span><br>
+<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="FantasyTitle06MinorTenseBigAlt01" src="IronCode/Audio/Fantasy Title 06 Minor Tense Big Alt 01.mp3" controls></audio>
+</div>
+<div id="Song11">
+<div id ="titles">Title: Battle of Kings</div>
+<span>Music used: Battle of Kings by Per Kiilstofte</span> <br>
+<a href="https://machinimasound.com/?s=battle+of+kings" target="_blank">https://machinimasound.com/?s=b...</a><br>
+<span>Licensed under Creative Commons Attribution 4.0 International</span><br>
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="BattleOfKings" src="IronCode/Audio/Battle of Kings.mp3" controls></audio>
+</div>
+<div id="Song12">
+<div id ="titles">Title: In Light Of Darkness</div>
+<span>Music provided by No Copyright Music:</span><br>
+<a href="https://www.youtube.com/c/royaltyfreezone" target="_blank">https://www.youtube.com/c/royaltyfree...</a><br>
+<span>Music used: In Light Of Darkness by Jay Man - OurMusicBox</span><br>
+<a href="https://www.youtube.com/watch?v=aCFLw-rtzVU" target="_blank">https://www.youtube.com/watch?v=...</a><br>
+<span>Licensed under Creative Commons Attribution 4.0</span><br>
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="InlightOfDarkness" src="IronCode/Audio/In Light Of Darkness.mp3" controls></audio>
+</div>
+<div id="Song13">
+<div id ="titles">Title: Battle of Giants</div>
+<span>Music provided by No Copyright Music:</span><br>
+<a href="https://www.youtube.com/c/royaltyfreezone" target="_blank">https://www.youtube.com/c/royaltyfree...</a><br>
+<span>Music used: Endless Storm by Makai Symphony</span><br>
+<a href="https://soundcloud.com/makai-symphony/battle-of-giants-epic-battle-music-royalty-free" target="_blank">https://soundcloud.com/makai-symphony...</a><br>
+<span>Licensed under Creative Commons Attribution 3.0</span><br>
+<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">https://creativecommons.org/licenses/...</a><br>
+
+<audio id="BattleOfGiants" src="IronCode/Audio/Battle of Giants.mp3" controls></audio>
+</div>
+<br />
+<button id="bottomButton" onclick="window.location.href = 'IronCode/Ironcode.html';">Start IronCode</button>
+</div>
+
+</div>
+
+<br />
+</div>
+</body>
+
+</html>
