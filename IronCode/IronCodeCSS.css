@@ -20,7 +20,7 @@ overflow: hidden;
 background-color: darkgreygrey;
 }
 video{
-position = absolute;
+position: absolute;
 margin-top:-38.1%;
 margin-left:-0.4%;
 display:block;
@@ -92,7 +92,7 @@ border:6px solid gray;
 background-color:rgb(185,185,185);
 border-radius:15px;
 
-background:url('image/gamebackground.png') no-repeat;
+background:url('Image/Gamebackground.png') no-repeat;
 background-size:cover;
 }
 html{
