@@ -1,0 +1,9 @@
+{
+    "version":"1.0",
+    "description":"A 2d game",
+    "full_description":"A 2d game i made as a highschool project.",
+    "name": "Ironcode",
+    "image": "https://bernster01.github.io/Ironcode/data/site.png",
+    "video": "https://bernster01.github.io/Ironcode/data/site.mp4",
+    "site": "https://bernster01.github.io/Ironcode/"
+}
